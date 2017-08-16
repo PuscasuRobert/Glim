@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GLIM" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GLIM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GLIM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DSFML_STATIC" />
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="libraries/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add library="glew32s" />
+			<Add library="opengl32" />
+			<Add directory="libraries/lib" />
+		</Linker>
+		<Unit filename="include/Includes.h" />
+		<Unit filename="include/Shader.h" />
+		<Unit filename="include/glim/App.h" />
+		<Unit filename="include/glim/Button.h" />
+		<Unit filename="include/glim/Data.h" />
+		<Unit filename="include/glim/Draw.h" />
+		<Unit filename="include/glim/HorizontalTab.h" />
+		<Unit filename="include/glim/Screen.h" />
+		<Unit filename="include/glim/Tab.h" />
+		<Unit filename="include/glim/VerticalTab.h" />
+		<Unit filename="include/glim/Window.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="shaders/shader.frag" />
+		<Unit filename="shaders/shader.vert" />
+		<Unit filename="src/Includes.cpp" />
+		<Unit filename="src/Shader.cpp" />
+		<Unit filename="src/glim/App.cpp" />
+		<Unit filename="src/glim/Button.cpp" />
+		<Unit filename="src/glim/Data.cpp" />
+		<Unit filename="src/glim/Draw.cpp" />
+		<Unit filename="src/glim/HorizontalTab.cpp" />
+		<Unit filename="src/glim/Screen.cpp" />
+		<Unit filename="src/glim/Tab.cpp" />
+		<Unit filename="src/glim/VerticalTab.cpp" />
+		<Unit filename="src/glim/Window.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
