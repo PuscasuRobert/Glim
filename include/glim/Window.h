@@ -1,8 +1,9 @@
 #ifndef GLIM_WINDOW_H
 #define GLIM_WINDOW_H
 
-#include "glim/Screen.h"
 #include "Includes.h"
+
+#include "glim/Screen.h"
 
 namespace glim {
 

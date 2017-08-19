@@ -2,9 +2,17 @@
 #include "Shader.h"
 
 #include "glim/App.h"
-#include "glim/Window.h"
-#include "glim/Draw.h"
 #include "glim/Button.h"
+//#include "glim/Data.h"
+#include "glim/Draw.h"
+#include "glim/HorizontalTab.h"
+#include "glim/VerticalTab.h"
+#include "glim/Screen.h"
+#include "glim/Tab.h"
+#include "glim/VerticalTab.h"
+#include "glim/Window.h"
+
+#include "jsonLoader.h"
 
 using namespace std;
 
@@ -13,11 +21,13 @@ void setupWindow();
 sf::Event event;
 
 glim::App app;
-
 Shader shader;
+jsonLoader json;
+jsonNode js;
 
 int main()
 {
+    /*
     app.window.resize(1);
 
     app.window[0]=new glim::Window;
@@ -35,9 +45,19 @@ int main()
 
     app.window[0]->create();
 
-    shader.load("shaders/shader.vert","shaders/shader.frag");
+    app.window[0]->screen.resize(1);
+    app.window[0]->currentScreen=0;
+    app.window[0]->screen[0].tab=new glim::HorizontalTab;
+    app.window[0]->screen[0].windowPtr=&app.window[0]->renderWindow;
+    app.window[0]->screen[0].createBuffer();
+    */
 
-    app.run();
+
+    json.load("interface.json");
+
+    //shader.load("shaders/shader.vert","shaders/shader.frag");
+
+    //app.run();
 
     /*vector<sf::Vector2i> p;
     p.push_back(sf::Vector2i(0,0));
@@ -51,7 +71,6 @@ int main()
     glim::Button* b1=new glim::Button(p);
     drawEngine.addWidget(b1);
     drawEngine.createGPUdata();*/
-
 
     return 0;
 }

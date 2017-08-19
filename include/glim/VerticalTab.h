@@ -1,9 +1,12 @@
 #ifndef GLIM_VERTICALTAB_H
 #define GLIM_VERTICALTAB_H
 
+#include "Includes.h"
+#include "glim/Tab.h"
+
 namespace glim {
 
-class VerticalTab
+class VerticalTab: public glim::Tab
 {
     public:
         VerticalTab();

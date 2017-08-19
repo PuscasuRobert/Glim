@@ -56,6 +56,9 @@
 		<Unit filename="include/glim/Tab.h" />
 		<Unit filename="include/glim/VerticalTab.h" />
 		<Unit filename="include/glim/Window.h" />
+		<Unit filename="include/jsonLoader.h" />
+		<Unit filename="include/jsonNode.h" />
+		<Unit filename="interface.json" />
 		<Unit filename="main.cpp" />
 		<Unit filename="shaders/shader.frag" />
 		<Unit filename="shaders/shader.vert" />
@@ -70,6 +73,8 @@
 		<Unit filename="src/glim/Tab.cpp" />
 		<Unit filename="src/glim/VerticalTab.cpp" />
 		<Unit filename="src/glim/Window.cpp" />
+		<Unit filename="src/jsonLoader.cpp" />
+		<Unit filename="src/jsonNode.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

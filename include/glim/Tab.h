@@ -8,7 +8,8 @@ namespace glim {
 class Tab
 {
     public:
-        deque<glim::Tab>son;
+        int w,h;
+        vector<glim::Tab*>son;
         Tab();
         virtual ~Tab();
 

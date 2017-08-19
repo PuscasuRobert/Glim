@@ -31,6 +31,11 @@ class Shader;
 extern sf::Event event;
 extern Shader shader;
 
+struct jsonNode{
+    string text;
+    deque<deque<jsonNode> >son;
+};
+
 /*
 namespace glim
 {
