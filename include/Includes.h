@@ -31,7 +31,8 @@ class Shader;
 extern sf::Event event;
 extern Shader shader;
 
-struct jsonNode{
+struct jsonNode
+{
     string text;
     deque<deque<jsonNode> >son;
 };
