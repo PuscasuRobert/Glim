@@ -11,14 +11,17 @@ class jsonLoader
         jsonLoader(const char* path);
 
         void load(const char* path  );
-        string getCharacters(char character,int nr=1);
-        string getCharacters(const char* character,int nr=1);
+        string clearSpaces();
+        string getCharactersUntill(char character,int nr=1);
+        string getCharactersUntill(const char* character,int nr=1);
+        string getCharactersWhile(const char* characters);
         void write(jsonNode *J,int level);
         void read(jsonNode* J);
 
         ifstream fin;
         char c;
         jsonNode J;
+        int output=2;
     protected:
 
     private:

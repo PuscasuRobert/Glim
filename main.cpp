@@ -25,8 +25,24 @@ Shader shader;
 jsonLoader json;
 jsonNode js;
 
+
+float lungime[1000]={694,694,600.5,564,564,564,694,694,800.5,764,764,764,694,694,800.5,764,764,694,694,400.5,364,364,301,500,301,500,301,301,500,301,500,301,301,764,764,720,720,764,712.5,720,720,364,364,364};
+float latime [100]={510,510,  510,100,100,497,510,510,  510,100,100,497,510,510,  510,100,100,510,510,510  ,100,100,105,105,105,105,464,105,105,105,105,464,105,310,297,310,310,310,789.5,310,310,310,310,297};
+
+
 int main()
 {
+    int i,j;
+
+
+    int n;
+    float total=0;
+
+    for(i=0;i<44;i++)
+        for(j=0;j<44;j++)
+            total+=lungime[i]*latime[j];
+    cout<<total;
+
     /*
     app.window.resize(1);
 
@@ -53,7 +69,7 @@ int main()
     */
 
 
-    json.load("interface.json");
+    //json.load("interface.json");
 
     //shader.load("shaders/shader.vert","shaders/shader.frag");
 

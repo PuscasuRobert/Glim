@@ -1,13 +1,7 @@
 {
-    "app":
-    {
-        "interface":
-        {
-            "window":1
-        },
-        "data":
-        {
-            "d1":2
-        }
-    }
+    "window":
+    [
+        "priority":0,
+        "currentScreen":0
+    ]
 }
