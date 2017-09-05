@@ -14,7 +14,7 @@ class Window
         string title;
         sf::ContextSettings settings;
 
-        sf::RenderWindow renderWindow;
+        sf::RenderWindow* renderWindow;
 
         unsigned int priority;
         unsigned int currentScreen;

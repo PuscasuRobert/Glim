@@ -1,7 +1,16 @@
 {
-    "window":
-    [
-        "priority":0,
-        "currentScreen":0
-    ]
+    "interface":
+    {
+        "window":
+        [
+            {
+                "priority":0,
+                "videoMode":0
+            },
+            {
+                "priority":0,
+                "videoMode":0
+            }
+        ]
+    }
 }

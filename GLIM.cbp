@@ -45,6 +45,7 @@
 			<Add library="opengl32" />
 			<Add directory="libraries/lib" />
 		</Linker>
+		<Unit filename="glim classes" />
 		<Unit filename="include/Includes.h" />
 		<Unit filename="include/Shader.h" />
 		<Unit filename="include/glim/App.h" />
@@ -52,13 +53,14 @@
 		<Unit filename="include/glim/Data.h" />
 		<Unit filename="include/glim/Draw.h" />
 		<Unit filename="include/glim/HorizontalTab.h" />
+		<Unit filename="include/glim/Interface.h" />
+		<Unit filename="include/glim/Interpreter.h" />
 		<Unit filename="include/glim/Screen.h" />
 		<Unit filename="include/glim/Tab.h" />
 		<Unit filename="include/glim/VerticalTab.h" />
 		<Unit filename="include/glim/Window.h" />
-		<Unit filename="include/jsonLoader.h" />
+		<Unit filename="include/json/jsonLoader.h" />
 		<Unit filename="interface.json" />
-		<Unit filename="interface2" />
 		<Unit filename="main.cpp" />
 		<Unit filename="shaders/shader.frag" />
 		<Unit filename="shaders/shader.vert" />
@@ -69,11 +71,13 @@
 		<Unit filename="src/glim/Data.cpp" />
 		<Unit filename="src/glim/Draw.cpp" />
 		<Unit filename="src/glim/HorizontalTab.cpp" />
+		<Unit filename="src/glim/Interface.cpp" />
+		<Unit filename="src/glim/Interpreter.cpp" />
 		<Unit filename="src/glim/Screen.cpp" />
 		<Unit filename="src/glim/Tab.cpp" />
 		<Unit filename="src/glim/VerticalTab.cpp" />
 		<Unit filename="src/glim/Window.cpp" />
-		<Unit filename="src/jsonLoader.cpp" />
+		<Unit filename="src/json/jsonLoader.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -1,17 +1,16 @@
 #ifndef GLIM_APP_H
 #define GLIM_APP_H
 
-#include "glim/Draw.h"
 #include "glim/Data.h"
-#include "glim/Window.h"
+#include "glim/Interface.h"
 
 namespace glim {
 
 class App
 {
     public:
-        glim::Data data;
-        vector<glim::Window*>window;
+        glim::Data* dataTree;
+        glim::Interface* interfaceTree;
 
         void run();
     private:

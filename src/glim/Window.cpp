@@ -4,7 +4,7 @@ namespace glim {
 
 void Window::create()
 {
-    renderWindow.create(videoMode, title, sf::Style::Close, settings);
+    renderWindow->create(videoMode, title, sf::Style::Close, settings);
 
     glewExperimental = GL_TRUE;
     glewInit();
@@ -21,15 +21,15 @@ void Window::render()
     shader.use();
     screen[currentScreen].drawEngine.run();
 
-    renderWindow.display();
+    renderWindow->display();
 }
 
 void Window::handleEvents()
 {
-    while (renderWindow.pollEvent(event))
+    while (renderWindow->pollEvent(event))
     {
         if (event.type == sf::Event::Closed)
-            renderWindow.close();
+            renderWindow->close();
     }
 }
 

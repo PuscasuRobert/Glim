@@ -956,7 +956,7 @@
 1502635246 source:c:\users\robert\desktop\glim\src\glim\verticaltab.cpp
 	"glim/VerticalTab.h"
 
-1503218608 source:c:\users\robert\documents\github\glim\main.cpp
+1504399726 source:c:\users\robert\documents\github\glim\main.cpp
 	"Includes.h"
 	"Shader.h"
 	"glim/App.h"
@@ -968,9 +968,10 @@
 	"glim/Tab.h"
 	"glim/VerticalTab.h"
 	"glim/Window.h"
-	"jsonLoader.h"
+	"glim/Interpreter.h"
+	"json/jsonLoader.h"
 
-1503219171 c:\users\robert\documents\github\glim\include\includes.h
+1504471766 c:\users\robert\documents\github\glim\include\includes.h
 	<GL/glew.h>
 	<SFML/Graphics.hpp>
 	<SFML/OpenGL.hpp>
@@ -1855,10 +1856,9 @@
 1502922634 c:\users\robert\documents\github\glim\include\shader.h
 	"Includes.h"
 
-1502922634 c:\users\robert\documents\github\glim\include\glim\app.h
-	"glim/Draw.h"
+1504385242 c:\users\robert\documents\github\glim\include\glim\app.h
 	"glim/Data.h"
-	"glim/Window.h"
+	"glim/Interface.h"
 
 1502922634 c:\users\robert\documents\github\glim\include\glim\draw.h
 	"Includes.h"
@@ -1869,7 +1869,7 @@
 
 1502922634 c:\users\robert\documents\github\glim\include\glim\data.h
 
-1503100775 c:\users\robert\documents\github\glim\include\glim\window.h
+1504197974 c:\users\robert\documents\github\glim\include\glim\window.h
 	"Includes.h"
 	"glim/Screen.h"
 
@@ -1881,7 +1881,7 @@
 1503101142 c:\users\robert\documents\github\glim\include\glim\tab.h
 	"Includes.h"
 
-1502922638 source:c:\users\robert\documents\github\glim\src\glim\app.cpp
+1504384798 source:c:\users\robert\documents\github\glim\src\glim\app.cpp
 	"glim/App.h"
 
 1502922638 source:c:\users\robert\documents\github\glim\src\glim\button.cpp
@@ -1913,7 +1913,7 @@
 	"Includes.h"
 	"glim/Tab.h"
 
-1502922638 source:c:\users\robert\documents\github\glim\src\glim\window.cpp
+1504202253 source:c:\users\robert\documents\github\glim\src\glim\window.cpp
 	"glim/Window.h"
 
 1502922638 source:c:\users\robert\documents\github\glim\src\includes.cpp
@@ -1922,10 +1922,107 @@
 1502922638 source:c:\users\robert\documents\github\glim\src\shader.cpp
 	"Shader.h"
 
-1503602280 c:\users\robert\documents\github\glim\include\jsonloader.h
+1503945474 c:\users\robert\documents\github\glim\include\jsonloader.h
+	"Includes.h"
+	"json/Validator.h"
+
+1503939562 source:c:\users\robert\documents\github\glim\src\jsonloader.cpp
+	"jsonLoader.h"
+
+1504033863 c:\users\robert\documents\github\glim\include\json\validator.h
+	"Includes.h"
+
+1503938081 source:c:\users\robert\documents\github\glim\src\json\closecurlybrace.cpp
+	"json/CloseCurlyBrace.h"
+
+1504033825 c:\users\robert\documents\github\glim\include\json\closecurlybrace.h
+	"json/Validator.h"
+
+1503938112 source:c:\users\robert\documents\github\glim\src\json\closesquarebrace.cpp
+	"json/CloseSquareBrace.h"
+
+1504033820 c:\users\robert\documents\github\glim\include\json\closesquarebrace.h
+	"json/Validator.h"
+
+1503938245 source:c:\users\robert\documents\github\glim\src\json\colon.cpp
+	"json/Colon.h"
+
+1504033825 c:\users\robert\documents\github\glim\include\json\colon.h
+	"json/Validator.h"
+
+1503938388 source:c:\users\robert\documents\github\glim\src\json\comma.cpp
+	"json/Comma.h"
+
+1504033825 c:\users\robert\documents\github\glim\include\json\comma.h
+	"json/Validator.h"
+
+1503938347 source:c:\users\robert\documents\github\glim\src\json\false.cpp
+	"json/False.h"
+
+1504033788 c:\users\robert\documents\github\glim\include\json\false.h
+	"json/Validator.h"
+
+1503938297 source:c:\users\robert\documents\github\glim\src\json\letter.cpp
+	"json/Letter.h"
+
+1504033791 c:\users\robert\documents\github\glim\include\json\letter.h
+	"json/Validator.h"
+
+1503938361 source:c:\users\robert\documents\github\glim\src\json\null.cpp
+	"json/Null.h"
+
+1504033793 c:\users\robert\documents\github\glim\include\json\null.h
+	"json/Validator.h"
+
+1503938265 source:c:\users\robert\documents\github\glim\src\json\number.cpp
+	"json/Number.h"
+
+1504033796 c:\users\robert\documents\github\glim\include\json\number.h
+	"json/Validator.h"
+
+1503939746 source:c:\users\robert\documents\github\glim\src\json\opencurlybrace.cpp
+	"json/OpenCurlyBrace.h"
+
+1504034004 c:\users\robert\documents\github\glim\include\json\opencurlybrace.h
+	"json/Validator.h"
+
+1503938102 source:c:\users\robert\documents\github\glim\src\json\opensquarebrace.cpp
+	"json/OpenSquareBrace.h"
+
+1504033811 c:\users\robert\documents\github\glim\include\json\opensquarebrace.h
+	"json/Validator.h"
+
+1503939465 source:c:\users\robert\documents\github\glim\src\json\quote.cpp
+	"json/Quote.h"
+
+1504034626 c:\users\robert\documents\github\glim\include\json\quote.h
+	"json/Validator.h"
+
+1503938336 source:c:\users\robert\documents\github\glim\src\json\true.cpp
+	"json/True.h"
+
+1504033817 c:\users\robert\documents\github\glim\include\json\true.h
+	"json/Validator.h"
+
+1503938701 source:c:\users\robert\documents\github\glim\src\json\validator.cpp
+	"json/Validator.h"
+
+1504471731 source:c:\users\robert\documents\github\glim\src\json\jsonloader.cpp
+	"json/jsonLoader.h"
+
+1504465846 c:\users\robert\documents\github\glim\include\json\jsonloader.h
+	"Includes.h"
+
+1504460233 c:\users\robert\documents\github\glim\include\glim\interpreter.h
 	"Includes.h"
 	"glim/App.h"
 
-1503602924 source:c:\users\robert\documents\github\glim\src\jsonloader.cpp
-	"jsonLoader.h"
+1504468105 source:c:\users\robert\documents\github\glim\src\glim\interpreter.cpp
+	"glim/Interpreter.h"
+
+1504399083 c:\users\robert\documents\github\glim\include\glim\interface.h
+	"glim/Window.h"
+
+1504383155 source:c:\users\robert\documents\github\glim\src\glim\interface.cpp
+	"glim/Interface.h"
 

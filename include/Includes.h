@@ -34,7 +34,7 @@ extern Shader shader;
 struct jsonNode
 {
     string text;
-    deque<deque<jsonNode> >son;
+    deque<deque<jsonNode>>son;
 };
 
 /*

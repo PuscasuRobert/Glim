@@ -1,0 +1,28 @@
+{
+    interface:
+    {
+        vector<window>
+        {
+            vector<screen>
+            {
+                vector<tab>
+                {
+                    vector<tab>
+                    {
+                        ...
+                    }
+                    vector<button>
+                    vector<textbox>
+                    ...
+                    vector<CreatedObject>
+                }
+            }
+        }
+    }
+    data:
+    {
+
+    }
+}
+
+
