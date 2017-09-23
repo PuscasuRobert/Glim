@@ -4,8 +4,8 @@ namespace glim {
 
 void Screen::createBuffer()
 {
-    tab->w=windowPtr->getSize().x;
-    tab->h=windowPtr->getSize().y;
+    tab.w=windowPtr->getSize().x;
+    tab.h=windowPtr->getSize().y;
 }
 
 void Screen::addTab(glim::Tab* t)
@@ -18,5 +18,11 @@ void Screen::addTab(glim::Tab* t)
         addTab(t->son[i]);
     }
 }
+
+Screen::~Screen()
+{
+    delete windowPtr;
+};
+
 
 } // namespace glim

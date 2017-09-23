@@ -25,14 +25,13 @@ class jsonLoader
         string getCharactersUntill(char character);
         string getCharactersUntill(const char* character);
         string getNumber();
-        string intTostring(int x);
         string sendError(string errorNumber,string chars);
         string sendError(string errorNumber,bool value);
         string sendError(string errorNumber,int value);
 
         ifstream* fin;
         char c;
-        int output=2,line;
+        int output=0,line;
 
 };
 } // namespace json

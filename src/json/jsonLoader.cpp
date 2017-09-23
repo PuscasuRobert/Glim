@@ -22,24 +22,19 @@ void jsonLoader::load(const char* path)
     fin=new ifstream;
     fin->open(path);
     J=new jsonNode;
-    try
+
+    line=1;
+    if(fin->eof()==0)
     {
-        line=1;
-        if(fin->eof()==0)
+        nextCharacter();
+        read(J);
+        if(output==2)
         {
-            nextCharacter();
-            read(J);
-            if(output==2)
-            {
-                write(J,0);
-            }
+            write(J,0);
         }
-        else throw "File is empty";
     }
-    catch(string x)
-    {
-        cout<<x;
-    }
+    else throw "File is empty";
+
     fin->close();
     delete fin;
 }
@@ -560,39 +555,19 @@ void jsonLoader::read(jsonNode* J)
     }
 }
 
-string jsonLoader::intTostring(int x)
-{
-    int i,aux;
-    string str;
-
-    while(x>0)
-    {
-        str+=x%10+'0';
-        x=x/10;
-    }
-
-    for(i=0;i<str.size()/2;i++)
-    {
-        aux=str[str.size()-1-i];
-        str[str.size()-1-i]=str[i];
-        str[i]=aux;
-    }
-    return str;
-}
-
 void jsonLoader::write(jsonNode *J,int level)
 {
     int i,j,k;
 
-    for(k=0;k<level;k++)
-        cout<<char(9);
-    if(J->text.size()==0)
-        cout<<"___"<<'\n';
-    else cout<<J->text<<'\n';
-
     for(i=0;i<J->son.size();i++)
         for(j=0;j<J->son[i].size();j++)
         {
+            for(k=0;k<level;k++)
+                cout<<char(9);
+            cout<<i+1<<' '<<j+1<<')';
+            if(J->text.size()==0)
+                cout<<"___\n";
+            else cout<<J->text<<'\n';
             write(&J->son[i][j],level+1);
         }
 }

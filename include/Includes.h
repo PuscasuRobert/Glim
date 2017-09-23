@@ -37,6 +37,9 @@ struct jsonNode
     deque<deque<jsonNode>>son;
 };
 
+string intTostring(int x);
+int stringToint(string str);
+
 /*
 namespace glim
 {

@@ -53,9 +53,15 @@ int main()
     app.window[0]->screen[0].createBuffer();
     */
 
-    JSON.load("interface.json");
-    interpreter.setup(&app,JSON.J);
-
+    try
+    {
+        JSON.load("interface.json");
+        interpreter.setup(&app,JSON.J);
+    }
+    catch(string x)
+    {
+        cout<<x;
+    }
     //shader.load("shaders/shader.vert","shaders/shader.frag");
 
     //app.run();

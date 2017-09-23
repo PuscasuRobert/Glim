@@ -9,8 +9,8 @@ namespace glim {
 class App
 {
     public:
-        glim::Data* dataTree;
-        glim::Interface* interfaceTree;
+        glim::Data dataTree;
+        glim::Interface interfaceTree;
 
         void run();
     private:

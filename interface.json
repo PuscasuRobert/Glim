@@ -1,16 +1,30 @@
 {
-    "interface":
+    "interfaceTree":
     {
         "window":
         [
             {
                 "priority":0,
-                "videoMode":0
-            },
-            {
-                "priority":0,
-                "videoMode":0
+                "currentScreen":0,
+                "VideoMode":
+                {
+                    "width":800,
+                    "height":600,
+
+                },
+                "title":"MERGE",
+                "screens":
+                [
+                    "tab":
+                    {
+                        "type":"horizontal"
+                    }
+                ]
             }
         ]
+    },
+    "dataTree":
+    {
+
     }
 }

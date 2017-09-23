@@ -11,8 +11,9 @@ namespace glim {
 class Screen
 {
     public:
+        ~Screen();
         glim::Draw drawEngine;
-        glim::Tab* tab;
+        glim::Tab tab;
 
         sf::RenderWindow* windowPtr;
 

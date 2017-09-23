@@ -6,6 +6,7 @@
 
 namespace glim {
 
+
 class Interpreter
 {
     public:
@@ -14,9 +15,9 @@ class Interpreter
 
         void setup(glim::App* app,jsonNode* J);
         void setupInterface(glim::Interface* interfaceTree,jsonNode* J);
-        void setupWindowVector(deque<glim::Window>* interfaceTree,jsonNode* J);
+        void setupWindowVector(deque<glim::Window>& windowVector,jsonNode* J);
         void setupWindow(glim::Window* window,jsonNode* J);
-        string findProperty(jsonNode* J,int i,int j);
+        void setupVideoMode(sf::VideoMode* videoMode,jsonNode* J);
 
     protected:
 
