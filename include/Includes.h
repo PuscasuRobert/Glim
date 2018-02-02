@@ -7,20 +7,19 @@
 #include <SFML/OpenGL.hpp>
 #include <SFML/Window.hpp>
 
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
-#include <glm/gtx/euler_angles.hpp>
-
 #include <vector>
 #include <string>
 #include <deque>
+#include <forward_list>
+#include <functional>
 
 #include <iostream>
 #include <fstream>
 #include <sstream>
 
 #include <windows.h>
+#include <stdio.h>
+#include <dirent.h>
 
 #include "Shader.h"
 
@@ -34,9 +33,10 @@ extern Shader shader;
 struct jsonNode
 {
     string text;
-    deque<deque<jsonNode>>son;
+    deque<deque<jsonNode> >son;
 };
 
+void setupOpenGL();
 string intTostring(int x);
 int stringToint(string str);
 

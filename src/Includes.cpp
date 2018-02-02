@@ -32,3 +32,9 @@ int stringToint(string str)
     }
     return nr;
 }
+
+void setupOpenGL()
+{
+    glewExperimental = GL_TRUE;
+    glewInit();
+}
